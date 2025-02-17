@@ -1,0 +1,105 @@
+:root {
+    --primary: #5B5FF9;
+    --primary-dark: #4347DC;
+    --background: #F5F6FF;
+    --surface: #FFFFFF;
+    --text: #2D2D2D;
+    --text-secondary: #666666;
+    --success: #4ECB71;
+    --success-dark: #3BB55E;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: var(--background);
+    color: var(--text);
+}
+
+.container {
+    text-align: center;
+    background-color: var(--surface);
+    padding: 2.5rem;
+    border-radius: 24px;
+    box-shadow: 0 12px 32px rgba(91, 95, 249, 0.1);
+    width: 90%;
+    max-width: 400px;
+}
+
+h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--text);
+}
+
+.timer {
+    font-size: 5rem;
+    font-weight: 700;
+    margin: 2rem 0;
+    color: var(--primary);
+    font-feature-settings: "tnum";
+    font-variant-numeric: tabular-nums;
+}
+
+.controls {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+    margin: 2rem 0;
+}
+
+.controls button {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.875rem 1.5rem;
+    cursor: pointer;
+    background-color: var(--success);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    transition: all 0.2s ease;
+}
+
+.controls button:hover {
+    background-color: var(--success-dark);
+    transform: translateY(-1px);
+}
+
+#toggle-mode {
+    background-color: var(--primary);
+    grid-column: span 2;
+}
+
+#toggle-mode:hover {
+    background-color: var(--primary-dark);
+}
+
+#mode-text {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    color: var(--text-secondary);
+}
+
+#pause {
+    background-color: #E9EAFF;
+    color: var(--primary);
+}
+
+#pause:hover {
+    background-color: #DFE0FF;
+}
+
+#reset {
+    background-color: #E9EAFF;
+    color: var(--primary);
+}
+
+#reset:hover {
+    background-color: #DFE0FF;
+} 
