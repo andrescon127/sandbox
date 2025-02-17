@@ -104,6 +104,14 @@ h1 {
     background-color: #DFE0FF;
 }
 
+#add-time {
+    background-color: var(--success);
+}
+
+#add-time:hover {
+    background-color: var(--success-dark);
+}
+
 .header {
     display: flex;
     justify-content: space-between;

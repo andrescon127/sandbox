@@ -88,11 +88,18 @@ function toggleMode() {
     switchMode();
 }
 
+function addFiveMinutes() {
+    timeLeft += 5 * 60; // Add 5 minutes (300 seconds)
+    updateDisplay();
+}
+
 // Add event listeners
 startButton.addEventListener('click', startTimer);
 pauseButton.addEventListener('click', pauseTimer);
 resetButton.addEventListener('click', resetTimer);
 toggleButton.addEventListener('click', toggleMode);
+const addTimeButton = document.getElementById('add-time');
+addTimeButton.addEventListener('click', addFiveMinutes);
 
 // Initialize the display
 resetTimer(); 
