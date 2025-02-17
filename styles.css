@@ -102,4 +102,35 @@ h1 {
 
 #reset:hover {
     background-color: #DFE0FF;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.mode-icon {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--primary);
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.mode-icon:hover {
+    background-color: var(--background);
+    transform: scale(1.1);
+}
+
+.mode-icon:active {
+    transform: scale(0.95);
 } 

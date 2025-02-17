@@ -8,10 +8,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <div class="container">
-        <h1>Pomodoro Timer</h1>
+        <div class="header">
+            <h1>Pomodoro Timer</h1>
+            <button id="toggle-mode" class="mode-icon">
+                <i class="fas fa-person-running"></i>
+            </button>
+        </div>
         <div class="timer">
             <span id="minutes">25</span>:<span id="seconds">00</span>
         </div>
@@ -19,7 +25,6 @@
             <button id="start">Start</button>
             <button id="pause">Pause</button>
             <button id="reset">Reset</button>
-            <button id="toggle-mode">Rest Mode</button>
         </div>
         <div class="mode">
             <p id="mode-text">Work Time</p>

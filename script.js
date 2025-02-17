@@ -27,10 +27,18 @@ function updateDisplay() {
 }
 
 function switchMode() {
+    const icon = toggleButton.querySelector('i');
+
+    if (isWorkTime) {
+        icon.className = 'fas fa-bed';  // sleeping icon
+        modeText.textContent = 'Rest Time';
+        timeLeft = breakTime;
+    } else {
+        icon.className = 'fas fa-person-running';  // running icon
+        modeText.textContent = 'Work Time';
+        timeLeft = workTime;
+    }
     isWorkTime = !isWorkTime;
-    timeLeft = isWorkTime ? workTime : breakTime;
-    modeText.textContent = isWorkTime ? 'Work Time' : 'Break Time';
-    toggleButton.textContent = isWorkTime ? 'Rest Mode' : 'Work Mode';
     updateDisplay();
 }
 
