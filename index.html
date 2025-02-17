@@ -18,6 +18,7 @@
                 <i class="fas fa-person-running"></i>
             </button>
         </div>
+        <div id="focus-task" class="focus-task"></div>
         <div class="timer">
             <span id="minutes">25</span>:<span id="seconds">00</span>
         </div>
@@ -29,6 +30,16 @@
         </div>
         <div class="mode">
             <p id="mode-text">Work Time</p>
+        </div>
+        <div id="task-modal" class="modal">
+            <div class="modal-content">
+                <h2>What are you focusing on?</h2>
+                <input type="text" id="task-input" placeholder="Enter your task...">
+                <div class="modal-buttons">
+                    <button id="confirm-task">Start</button>
+                    <button id="cancel-task">Cancel</button>
+                </div>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
